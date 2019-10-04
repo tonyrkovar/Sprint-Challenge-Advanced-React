@@ -22,7 +22,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App" data-testid='app-container'>
         <Display key={this.state.id} data={this.state.data} />
       </div>
     );
