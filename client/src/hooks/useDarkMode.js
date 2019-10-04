@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 import { useLocalStorage } from './useLocalStorage';
 
 
@@ -12,7 +12,7 @@ export const useDarkMode = () => {
 
     const handleChanges = e => {
         e.preventDefault();
-        setIsActivated(!isActivated)
+        setIsActived(!isActivated)
     }
 
     return [isActivated, handleChanges, setIsActived]

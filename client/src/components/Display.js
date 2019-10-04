@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { useDarkMode } from '../hooks/useDarkMode'
 
 export const Display = (props) => {
+    const [darkMode, handleDarkMode, setDarkMode] = useDarkMode(false)
 
     console.log('props', props)
     console.log('props.data', props.data)
@@ -13,6 +15,9 @@ export const Display = (props) => {
 
     return (
         <div>
+            <div>
+                <span className='dark__toggle'>Click to Toggle Darkmode</span>
+            </div>
             {player.map(player => {
                 return (
                     <div key={player.id}>
