@@ -7,7 +7,7 @@ import { Display } from './components/Display';
 
 class App extends React.Component {
   state = {
-    data: ''
+    data: []
   }
   componentDidMount = () => {
     axios
@@ -23,6 +23,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App" data-testid='app-container'>
+        {/* This display player information, sorry for bad naming*/}
         <Display key={this.state.id} data={this.state.data} />
       </div>
     );
