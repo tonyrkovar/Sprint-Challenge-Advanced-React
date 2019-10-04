@@ -15,13 +15,14 @@ export const Display = (props) => {
 
     return (
         <div>
-            <div>
-                <span className='dark__toggle'>Click to Toggle Darkmode</span>
+            <div className='dark__toggle'>
+                <p onClick={handleDarkMode}
+                    className={darkMode ? 'toggle toggled' : 'toggle'}>Click to Toggle Darkmode</p>
             </div>
             {player.map(player => {
                 return (
                     <div key={player.id}>
-                        <p>{player.name}</p>
+                        <p>{player.name} is #{player.id} on the list</p>
                         <p>{player.country}</p>
                     </div>)
             })}
