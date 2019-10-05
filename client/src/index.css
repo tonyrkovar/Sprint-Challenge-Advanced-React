@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.dark-mode{
+  background: black;
+  color: white;
+}
+
+.togle{
+  background: white;
+  color: black;
+}
+
+.toggled{
+  background: black;
+  color: white
+}
